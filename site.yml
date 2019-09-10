@@ -1,0 +1,22 @@
+---
+
+- name: update centos
+
+  hosts: centos-1
+  become: yes
+  remote_user: steve
+  
+  roles:
+    - common
+    - show
+
+- name: update fedora
+
+
+  hosts: fdesk
+  become: yes
+  remote_user: steve
+
+  roles:
+    - fedora
+    - show

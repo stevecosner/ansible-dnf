@@ -1,0 +1,3 @@
+---
+- name: uptime
+  raw: yum update -y

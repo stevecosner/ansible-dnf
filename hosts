@@ -8,13 +8,10 @@
 #   - You can enter hostnames or ip addresses
 #   - A hostname/ip can be a member of multiple groups
 
-[fedoradesktop]
 
-fdesk ansible_host=192.168.1.102 ansible_ssh_private_key_file=~/.ssh/id_rsa_msa
-centos-1 ansible_host=192.168.1.103 ansible_ssh_private_key_file=~/.ssh/id_rsa_msa
-
-
-
+[awsdev]
+ec2-1 ansible_host=1.1.1.1 ansible_ssh_private_key_file=~/.ssh/id_rsa
+ec2-2 ansible_host=2.2.2.2 ansible_ssh_private_key_file=~/.ssh/id_rsa
 #green.example.com
 #blue.example.com
 #192.168.100.1

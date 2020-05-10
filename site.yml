@@ -1,22 +1,12 @@
 ---
 
-- name: update centos
+- name: update yum - get info
 
-  hosts: centos-1
+  hosts: awsdev
   become: yes
-  remote_user: steve
+  remote_user: ec2-user
   
   roles:
     - common
     - show
 
-- name: update fedora
-
-
-  hosts: fdesk
-  become: yes
-  remote_user: steve
-
-  roles:
-    - fedora
-    - show

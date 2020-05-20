@@ -1,0 +1,14 @@
+---
+- name: dnf update
+  dnf: 
+    name: '*'
+    state: latest
+  register: dnf_result
+
+- debug:
+     var: dnf_result
+
+#- name: upgrade all packages
+#  dnf:
+#    name: "*"
+#    state: latest
